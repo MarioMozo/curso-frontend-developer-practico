@@ -1,7 +1,10 @@
 const menuEmail = document.querySelector('.navbar-email');
 const desktopMenu = document.querySelector('.desktop-menu');
+const menuIcon = document.querySelector('.menu');
+const desktopMobile = document.querySelector('.mobile-menu');
 
 menuEmail.addEventListener('click', toggleDesktopMenu);
+menuIcon.addEventListener('click', toggleDesktopMobile);
 
 function toggleDesktopMenu(){
     console.log("Se hizo click");
@@ -9,4 +12,6 @@ function toggleDesktopMenu(){
 
 }
 
-console.log("main.js ejecuntado...");
+function toggleDesktopMobile() {
+    desktopMobile.classList.toggle('inactive');
+}
